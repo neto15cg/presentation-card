@@ -27,7 +27,9 @@ export default function Home() {
                 Back-end developer.
               </p>
             </div>
-            <MdDeveloperMode color="#fff" size={300} />
+            <div className="icon-developer">
+              <MdDeveloperMode color="#fff" size={300} />
+            </div>
 
             <div className="network">
               <img
@@ -62,20 +64,27 @@ export default function Home() {
                 <p>JAVASCRIPT / TYPESCRIPT</p>
                 <h3>
                   I have been working as a JAVASCRIPT developer for 3 years. The
-                  frameworks I use most are ReactJS and React Native.
+                  frameworks I use most are <b>ReactJS</b> and{" "}
+                  <b>React Native</b>.
                 </h3>
               </div>
             </div>
             <div className="card">
               <div className="card-content">
                 <p>PHP</p>
-                <h3>I'm working with PHP during 3 years.</h3>
+                <h3>
+                  I've been working as a PHP developer for 3 years with{" "}
+                  <b>Laravel</b> to create APIs.
+                </h3>
               </div>
             </div>
             <div className="card">
               <div className="card-content">
                 <p>GOLANG</p>
-                <h3>I'm working with GOLANG during 2 years.</h3>
+                <h3>
+                  I've been working as a Golang developer for 2 years to create
+                  APIs.
+                </h3>
               </div>
             </div>
           </div>
@@ -91,7 +100,7 @@ export default function Home() {
           align-items: center;
           flex-direction: column;
           background-color: #151515;
-          height: 100vh;
+          min-height: 100vh;
           overflow: hidden;
         }
 
@@ -119,7 +128,7 @@ export default function Home() {
           flex: 1;
           flex-direction: column;
           width: 100%;
-          align-items: center;
+          align-items: flex-start;
           justify-content: space-between;
           padding: 30px 30px 30px 30px;
           max-height: 100%;
@@ -202,11 +211,35 @@ export default function Home() {
           font-size: 16px;
         }
 
-        // @media only screen and (max-width: 600px) {
-        //   .container {
-        //     flex-direction: column;
-        //   }
-        // }
+        @media only screen and (max-width: 1079px) {
+          .container {
+            overflow: auto;
+          }
+
+          .content {
+            flex-direction: column;
+          }
+
+          .presentation-container {
+            flex: 0;
+          }
+
+          .presentation {
+            max-width: 100%;
+          }
+
+          .skill-container {
+            overflow: hidden;
+            max-height: 100%;
+          }
+
+          .card {
+            width: 100%;
+          }
+          .icon-developer {
+            display: none;
+          }
+        }
       `}</style>
 
       <style jsx global>{`
