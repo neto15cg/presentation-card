@@ -128,21 +128,21 @@ export default function Home() {
           flex: 1;
           flex-direction: column;
           width: 100%;
-          align-items: flex-start;
+          align-items: center;
           justify-content: space-between;
           padding: 30px 30px 30px 30px;
           max-height: 100%;
         }
 
         .presentation {
-          max-width: 370px;
+          max-width: 450px;
+          text-align: justify;
         }
 
         .network {
           display: flex;
           flex-direction: row;
-          max-width: 370px;
-          width: 100%;
+          width: 450px;
         }
 
         .profile {
@@ -182,7 +182,7 @@ export default function Home() {
         }
 
         .card {
-          width: 500px;
+          width: 450px;
           min-height: 200px;
           background-color: #202022;
           transition: all 0.2s ease-in-out;
@@ -225,6 +225,13 @@ export default function Home() {
           }
 
           .presentation {
+            max-width: 100%;
+          }
+
+          .network {
+            display: fex;
+            align-items: center;
+            justify-content: center;
             max-width: 100%;
           }
 
